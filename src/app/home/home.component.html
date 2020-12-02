@@ -1,0 +1,96 @@
+<div class="container">
+	<h1 class="title">
+		{{ 'PAGES.HOME.TITLE' | translate }}
+	</h1>
+	<div id="container">
+		<div id="posts">
+			<div id="posts_menu">
+				<mat-chip-list aria-label="Fish selection">
+					<mat-chip>One fish</mat-chip>
+					<mat-chip>Two fish</mat-chip>
+					<mat-chip color="primary" selected>Primary fish</mat-chip>
+					<mat-chip color="accent" selected>Accent fish</mat-chip>
+				</mat-chip-list>
+			</div>
+			<mat-list>
+				<mat-list-item>Item 1</mat-list-item>
+				<mat-divider></mat-divider>
+				<mat-list-item>Item 2</mat-list-item>
+				<mat-divider></mat-divider>
+				<mat-list-item>Item 3</mat-list-item>
+				<mat-divider></mat-divider>
+				<mat-list-item>Item 4</mat-list-item>
+				<mat-divider></mat-divider>
+				<mat-list-item>Item 5</mat-list-item>
+				<mat-divider></mat-divider>
+				<mat-list-item>Item 6</mat-list-item>
+				<mat-divider></mat-divider>
+				<mat-list-item>Item 7</mat-list-item>
+				<mat-divider></mat-divider>
+				<mat-list-item>Item 8</mat-list-item>
+			</mat-list>
+		</div>
+		<div id="currentpost">
+			<mat-card class="example-card">
+				<mat-card-header>
+					<div mat-card-avatar class="example-header-image"></div>
+					<mat-card-title>Shiba Inu</mat-card-title>
+					<mat-card-subtitle>Dog Breed</mat-card-subtitle>
+				</mat-card-header>
+				<img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+				<mat-card-content>
+					<p>
+					The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+					A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+					bred for hunting.
+					</p>
+				</mat-card-content>
+				<mat-card-actions>
+					<button mat-button>LIKE</button>
+					<button mat-button>SHARE</button>
+				</mat-card-actions>
+			</mat-card>
+		</div>
+		<div id="context">
+			<mat-button-toggle-group id="contextpubpriv" name="contextpubpriv">
+				<mat-button-toggle value="public">PUBLIC</mat-button-toggle>
+				<mat-button-toggle value="private">PRIVATE</mat-button-toggle>
+			</mat-button-toggle-group>
+			<mat-card>
+				<mat-button-toggle-group id="contextpossconf" name="contextpossconf">
+					<mat-button-toggle value="POSSIBLE">POSSIBLE</mat-button-toggle>
+					<mat-button-toggle value="CONFIRMED">CONFIRMED</mat-button-toggle>
+				</mat-button-toggle-group>
+				<mat-chip-list>
+					<mat-chip>Graph</mat-chip>
+					<mat-chip>Topics</mat-chip>
+					<mat-chip color="primary" selected>Notes</mat-chip>
+					<mat-chip color="accent" selected>Files</mat-chip>
+				</mat-chip-list>
+				<mat-list id="paths">
+					<mat-list-item>Path 1</mat-list-item>
+					<mat-divider></mat-divider>
+					<mat-list-item>Path 2</mat-list-item>
+					<mat-divider></mat-divider>
+					<mat-list-item>Path 3</mat-list-item>
+					<mat-divider></mat-divider>
+					<mat-list-item>Path 4</mat-list-item>
+					<mat-divider></mat-divider>
+					<mat-list-item>Path 5</mat-list-item>
+					<mat-divider></mat-divider>
+					<mat-list-item>Path 6</mat-list-item>
+					<mat-divider></mat-divider>
+					<mat-list-item>Path 7</mat-list-item>
+					<mat-divider></mat-divider>
+					<mat-list-item>Path 8</mat-list-item>
+				</mat-list>
+			</mat-card>
+		</div>
+	</div>
+	<button mat-fab color="warn" aria-label="FAB button to test if material is ok">
+		<mat-icon>home</mat-icon>
+	</button>
+
+
+	<a routerLink="/detail">{{ 'PAGES.HOME.GO_TO_DETAIL' | translate }}</a>
+</div>
