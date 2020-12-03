@@ -1,0 +1,25 @@
+:host {
+
+}
+
+#container {
+    width:100%;
+    //text-align:center;
+    color: white;
+}
+
+#posts {
+    float:left;
+    width:33%;
+}
+
+#currentpost {
+    display: inline-block;
+    margin:0 auto;
+    width:33%;
+}
+
+#context {
+    float:right;
+    width:33%;
+}
